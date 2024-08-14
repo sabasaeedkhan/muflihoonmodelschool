@@ -1,0 +1,229 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color:black;
+}
+
+h1, h2, h3 {
+    color: rgb(27, 197, 27);
+    margin-bottom: 15px;
+}
+/* Home Page Styles */
+.home {
+    background-color: #3ff6f3; /* Green color */
+    color: black; /* Ensure text is readable on the green background */
+    padding: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #00aaff; /* Blue background */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aligns items to left and right */
+}
+
+header .logo {
+    flex: 1; /* Takes up available space */
+}
+
+header .logo img {
+    height: 60px; /* Adjust based on your logo size */
+}
+
+nav {
+    flex: 2; /* Takes up remaining space */
+}
+
+nav ul.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align menu items to the right */
+    gap: 15px;
+}
+
+nav ul.nav-menu li {
+    margin: 0;
+}
+
+nav ul.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav ul.nav-menu li a:hover {
+    background-color: #0077cc; /* Darker blue on hover */
+}
+
+/* Main Content Area */
+main {
+    padding: 20px;
+}
+
+/* Admissions Page Styles */
+#admissions iframe {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+}
+
+/* Gallery Page Styles */
+#gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-container img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-container img {
+        width: 100%;
+    }
+}
+
+/* Contact Us Page Styles */
+.whatsapp-chat {
+    margin-bottom: 20px;
+}
+
+.whatsapp-chat a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #25D366; /* WhatsApp green */
+}
+
+.whatsapp-chat img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.email-link {
+    margin-bottom: 20px;
+}
+
+.email-link a {
+    color: #0077cc; /* Blue color for email link */
+    text-decoration: none;
+}
+
+.email-link a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    height: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header .logo img {
+        height: 50px; /* Adjust logo size for mobile */
+    }
+
+    nav ul.nav-menu {
+        flex-direction: column;
+        align-items: flex-start; /* Align menu items to the left */
+    }
+
+    nav ul.nav-menu li {
+        margin: 5px 0;
+    }
+}
+/* General Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #00aaff; /* Blue color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0077cc; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Centering the Button */
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+.email-link a {
+    color: #0077cc; /* Blue color for email link */
+    text-decoration: none;
+}
+
+.email-link a:hover {
+    text-decoration: underline;
+}
+/* Glassmorphism Container */
+.glass {
+    background: rgba(255, 255, 255, 0.2); /* White with transparency */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    padding: 20px;
+    margin: 0 auto; /* Center the block */
+    max-width: 800px; /* Limit width */
+    color: black; /* Ensure text is readable */
+}
+
+/* Centering Text Block */
+.centered-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; /* Ensure it takes up enough height */
+    margin: 0 auto;
+}
